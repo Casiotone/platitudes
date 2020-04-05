@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            #box {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  text-align: center;
+  background-color: teal;
+  border-radius: 15%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#box.visible {
+  opacity: 1;
+  
+}
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <h1>Hi there!</h1>
+          </div>
+          
+          <button id="btn" class="btn">Click me!</button>
+
+        <script>
+            var box = document.getElementById("box")
+
+document.getElementById('btn').addEventListener(
+  "click", function() {
+    console.log('moo')
+    box.classList.add('visible');
+    setInterval(function() {box.classList.remove('visible')}, 4000)
+  }
+);
+        </script>
+    </body>
+
+</html>
