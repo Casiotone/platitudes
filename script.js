@@ -1,5 +1,4 @@
 
-
 const platitudes = [
 'It’ll all be OK',
 'This is life',
